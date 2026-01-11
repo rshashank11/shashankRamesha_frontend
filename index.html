@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>SCWOnline</title>
+  </head>
+  <body>
+    <header>
+      <nav id="secondary-nav" aria-label="secondary navigation bar">
+        <ul id="secondary-left">
+          <li>
+            <a href="#">
+              <img
+                width="32px"
+                height="13px"
+                src="/images/accessiblity-logo.svg"
+              />Accesibility on our website
+            </a>
+          </li>
+          <li>
+            <img
+              width="32px"
+              height="13px"
+              src="/images/font-size-logo.svg"
+            /><button id="font-size-btn">Increase text size</button>
+          </li>
+        </ul>
+        <ul id="secondary-right">
+          <li><a href="#" class="active">English</a></li>
+          <li><a href="#">Cymraeg</a></li>
+        </ul>
+      </nav>
+      <nav id="primary-nav" aria-label="primary navigation bar">
+        <div id="nav-logo"><img src="/images/default-logo.svg" /></div>
+        <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" id="hamburger-icon">&#9776;</label>
+        <div id="nav-links">
+          <ul>
+            <li><a href="#"><img src="/images/link-home.svg"/>Home</a></li>
+                <li><a href="#"><img src="/images/link-whoweare.svg"/>Who we are</a></li>
+                <li><a href="#"><img src="/images/link-whatwedo.svg"/>What we do</a></li>
+                <li><a href="#"><img src="/images/link-howtoregister.svg"/>How to register</a></li>
+                <li><a href="#"><img src="/images/link-careers.svg"/>Careers</a></li>
+
+          </ul>
+        </div>
+        <div id="nav-tools"><ul>
+            <li><a href="#"><img src="/images/search-bar.svg"/>Search</a></li>
+            <li><a href="#"><img src="/images/signup.svg"/>Sign up / Login</a></li>
+            
+        </ul></div>
+      </nav>
+    </header>
+    <main>
+        <img src="/images/care-worker-giving-a-lady-her-dinner-in-her-home.svg" id="bg-vector" />
+        <div id="bg-circle-vector"></div>
+    
+        <section id="intro-section">
+            <h1>Welcome to <span>SCWonline</span></h1>
+            <p>SCWonline is where you can apply to register and manage your registrations using a phone, PC or tablet. Employers, known to us as signatories, also use the site.</p>
+                <p>Once you have submitted an application to register or renew your registration, if there is any missing information, we will contact you by email. Please check your emails regularly, including your Junk Spam folders.</p>
+            <ul class="benefits-list">
+                <li><img src="/images/check-icon.svg" />Register as a social care worker</li>
+                <li><img src="/images/check-icon.svg" />Apply for signatory</li>
+                <li><img src="/images/check-icon.svg" />Manage your SCW account online</li>
+                <li><img src="/images/check-icon.svg" />Start or further your career in social care</li>
+            </ul>
+        </section>
+    
+        <section id="signup-section">
+            <h2>Sign up to SCWonline</h2>
+            <p>Please create your account</p>
+    
+            <form action="#">
+                <div class="field-group">
+                    <label for="user-title">Title</label>
+                    <select id="user-title">
+                        <option>Select your title</option>
+                        <option>Mr</option>
+                        <option>Mrs</option>
+                        <option>Ms</option>
+                    </select>
+                </div>
+    
+                <div class="field-group">
+                    <label for="forename">Forename(s)</label>
+                    <input type="text" id="forename" placeholder="Enter your Forename(s)">
+                </div>
+    
+                <div class="field-group">
+                    <label for="surname">Surname</label>
+                    <input type="text" id="surname" placeholder="Enter your Surname">
+                </div>
+    
+                <div class="field-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" placeholder="Enter your email address">
+                </div>
+    
+                <div class="field-group">
+                    <label for="mobile">Mobile telephone number</label>
+                    <input type="tel" id="mobile" placeholder="Enter your mobile number">
+                </div>
+    
+                <div class="field-group">
+                    <label for="dob">Date of birth</label>
+                    <input type="text" id="dob" placeholder="DD / MM / YYYY">
+                </div>
+    
+                <div class="field-group">
+                    <label for="lang-pref">Preferred language</label>
+                    <select id="lang-pref">
+                        <option>Select your preferred language</option>
+                        <option>English</option>
+                        <option>Welsh</option>
+                    </select>
+                </div>
+    
+                <div class="field-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••••">
+                </div>
+    
+                <button type="submit" id="submit-btn">Sign up</button>
+                <p class="login-footer">Already signed up? <a href="#">Login here</a></p>
+            </form>
+        </section>
+    </main>
+  </body>
+</html>
