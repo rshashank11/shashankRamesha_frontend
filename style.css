@@ -128,30 +128,42 @@ a {
         order: 1;
     }
 
-    #nav-links {
-        display: none;
+    #nav-links, #nav-tools {
+        display: none; 
         position: absolute;
-        top: 100%;
         left: 0;
         width: 100%;
         background-color: var(--primary);
-        padding: 20px 40px;
         z-index: 100;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 20px 40px;
     }
 
-    #nav-links ul {
+    #nav-links {
+        top: 100%;
+        border-top: 1px solid var(--white-translucent);
+    }
+
+    #nav-tools {
+        top: calc(100% + 205px);
+        padding-top: 0;
+        border: none;
+    }
+
+    #menu-toggle:checked ~ #nav-links,
+    #menu-toggle:checked ~ #nav-tools {
+        display: block;
+    }
+
+    #nav-links ul, #nav-tools ul {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
     }
 
-    #menu-toggle:checked ~ #nav-links {
-        display: block;
-    }
-
-    #nav-tools {
-        display: none;
+    #primary-nav #nav-tools ul li:last-child {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
     }
 }
 
